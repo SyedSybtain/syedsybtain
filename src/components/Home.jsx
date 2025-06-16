@@ -12,7 +12,7 @@ function Home() {
   return (
     <div className='text-black font-mono bg-[#E5E5E5] p-2 rounded flex flex-col justify-center items-center self-center max-w-screen'>
         <div className='rounded-[50%] bg-red-100 border-4 border-black min-w-[40%]'>
-          <img className='rounded-[50%] w-[100%]' src="https://lh3.googleusercontent.com/a/ACg8ocL_A23RouQyWCQWn0u75sc8Hxq1-JAK-cDEhZseZm5yreG6IV4=s288-c-no" alt=""/>
+          <img className='rounded-[50%] w-[100%]' src="https://avatars.githubusercontent.com/u/115772979?s=400&u=048db871df62327ae9ef3564d8e749d391219788&v=4" alt=""/>
         </div>
 
         <div className='flex flex-col justify-center items-start bg-[#E5E5E5] border-l-4 border-black p-2 w-max'>
