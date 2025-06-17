@@ -5,7 +5,7 @@ import Profile from "./components/Profile"
 import Projects from "./components/Projects"
 import Links from "./components/Links"
 import WhiteBoard from "./components/WhiteBoard"
-import DigitalClock from "./components/DigitalColock"
+import DigitalClock from "./components/DigitalClock"
 import Stopwatch from "./components/Stopwatch"
 import ToDoApp from "./components/ToDoApp"
 
