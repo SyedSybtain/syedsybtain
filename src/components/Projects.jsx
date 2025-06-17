@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Projects() {
   return (
     <div className='self-center w-[90%] rounded mt-4 flex flex-col justify-center items-center gap-2 p-1 bg-opacity-100'>
-        <b className='text-4xl text-black'>Demo React Projects 😀</b>
+        <b className='text-sm sm:text-2xl md:text-4xl text-black'>Demo React Projects 😀</b>
         <div className='bg-neutral-900 p-1 w-max rounded-md hover:bg-[#E5E5E5] hover:text-black hover:border-2 hover:border-black'><Link to='/projects/todo'>ToDo App</Link> </div>
         <div className='bg-neutral-900 p-1 w-max rounded-md hover:bg-[#E5E5E5] hover:text-black hover:border-2 hover:border-black'><Link to='/projects/whiteboard'>White Board</Link> </div>
         <div className='bg-neutral-900 p-1 w-max rounded-md hover:bg-[#E5E5E5] hover:text-black hover:border-2 hover:border-black'><Link to='/projects/stopwatch'>StopWatch</Link> </div>

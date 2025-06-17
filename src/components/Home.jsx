@@ -16,14 +16,14 @@ function Home() {
         </div>
 
         <div className='flex flex-col justify-center items-start bg-[#E5E5E5] border-l-4 border-black p-2 w-max'>
-          <b className='text-4xl'>Syed Sybtain</b>
+          <b className='text-2xl sm:text-3xl md:text-4xl'>Syed Sybtain</b>
           <b className=''>Python Full Stack Developer</b>
           <b className=''>Front End Developer</b>
           <b className=''>Computer Engineer</b>
         </div>
         
         <div className='mt-2 p-2 w-[80%]'>
-          <b className='border-b-4 border-black text-4xl'>About MySelf</b>
+          <b className='text-2xl sm:text-3xl md:text-4xl border-b-4 border-black'>About MySelf</b>
           <p>
             I am Computer Engineer Graduated from Comsats University Islamabad. I have passion in AI, NLP, GenAI, Computer Vision and Python Development. 
             This Passion leads me to do projects in these domains to learn advanced techniques and contribute in projects for the benefits of Society.

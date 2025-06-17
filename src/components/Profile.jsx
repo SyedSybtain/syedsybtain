@@ -9,16 +9,16 @@ function Profile() {
   return (
     <div className='text-black w-[90%] p-2 self-center flex flex-col items-center'>
 
-      <div className='text-4xl font-bold border-b-4 w-[90%] text-center border-black self-center'>About Me</div>
+      <div className='text-2xl sm:text-3xl md:text-4xl font-bold border-b-4 w-[90%] text-center border-black self-center'>About Me</div>
       
       <div className='w-[90%] mt-4 border-b-2 border-black'>
-        <b className='text-4xl'>Education</b>
+        <b className='text-2xl sm:text-3xl md:text-4xl'>Education</b>
         <li>BS Computer Engineering</li>
         <p>Comsats University Islamabad</p>
       </div>
       
       <div className='border-b-2 border-black w-[90%] mt-4'>
-        <b className='text-4xl'>Projects</b>
+        <b className='text-2xl sm:text-3xl md:text-4xl'>Projects</b>
         <li><b className=''>FYP-AUTOMATIC VEHICLECHECK-INCHECK-OUT USING IOT AND DEEPLEARNING</b></li>
         <p className='text-md font-serif'>This was my FYP Project to develop a smart system for Campus vehicles entering at the gate. 
           Using IoT we limit the functionality of Camera and then deploy YOLOv7 model on Raspberry Pi to detect Vehicle Type,
@@ -31,7 +31,7 @@ function Profile() {
       </div>
       
       <div className="border-b-2 border-black w-[90%] mt-4">
-        <b className='text-4xl'>Skills</b>
+        <b className='text-2xl sm:text-3xl md:text-4xl'>Skills</b>
         <div className='grid grid-cols-2 justify-center'>
           <div className=' w-max border-2 border-black mt-2 p-2 rounded'>
             <b className=''>Languages</b>
@@ -50,7 +50,7 @@ function Profile() {
 
       
       <div className='border-2 border-black w-[90%] mt-4 p-2 rounded'>
-        <b className='text-4xl'>Interests</b>
+        <b className='text-2xl sm:text-3xl md:text-4xl'>Interests</b>
         {interests.map((ints,l) => <li key={l}>{ints}</li>)}
       </div>
     </div>
