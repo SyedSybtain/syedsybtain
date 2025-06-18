@@ -1,4 +1,6 @@
+import { useGSAP } from '@gsap/react'
 import React from 'react'
+import gsap from 'gsap'
 
 function Profile() {
   const languages = ["Python" ,"JavaScript", "Matlab", "PostgreSQL", "C/C++", "Assembly", "Verilog", "VHDL"]
@@ -6,18 +8,26 @@ function Profile() {
   const techStack = ["Git/Github", "Docker", "AWS", "MySQL", "DJANGO", "DRF", "Raspberry Pi", "Integrating APIs"]
   const interests = ["AI", "ML", "GenAI", "NLP", "Computer Vision", "IoT", "LLM’s", "Fine Tuning AI Models", "Integrating AI with WEB"]
 
+  useGSAP(() => {
+    gsap.from('.about-dev',{
+      y:1000,
+      stagger:0.4,
+      duration:2,
+    })
+  },[])
+
   return (
     <div className='text-black w-[90%] p-2 self-center flex flex-col items-center'>
 
-      <div className='text-2xl sm:text-3xl md:text-4xl font-bold border-b-4 w-[90%] text-center border-black self-center'>About Me</div>
+      <div className='text-2xl sm:text-3xl md:text-4xl font-bold border-b-4 w-[90%] text-center border-black self-center about-dev'>About Me</div>
       
-      <div className='w-[90%] mt-4 border-b-2 border-black'>
+      <div className='w-[90%] mt-4 border-b-2 border-black about-dev'>
         <b className='text-2xl sm:text-3xl md:text-4xl'>Education</b>
         <li>BS Computer Engineering</li>
         <p>Comsats University Islamabad</p>
       </div>
       
-      <div className='border-b-2 border-black w-[90%] mt-4'>
+      <div className='border-b-2 border-black w-[90%] mt-4 about-dev'>
         <b className='text-2xl sm:text-3xl md:text-4xl'>Projects</b>
         <li><b className=''>FYP-AUTOMATIC VEHICLECHECK-INCHECK-OUT USING IOT AND DEEPLEARNING</b></li>
         <p className='text-md font-serif'>This was my FYP Project to develop a smart system for Campus vehicles entering at the gate. 
@@ -30,7 +40,7 @@ function Profile() {
         <p className='text-md font-serif'>Developed a Real-Time Yolov5 model of different sizes to detect the smoke and fire for remote safety application.</p>
       </div>
       
-      <div className="border-b-2 border-black w-[90%] mt-4">
+      <div className="border-b-2 border-black w-[90%] mt-4 about-dev">
         <b className='text-2xl sm:text-3xl md:text-4xl'>Skills</b>
         <div className='grid grid-cols-2 justify-center'>
           <div className=' w-max border-2 border-black mt-2 p-2 rounded'>
@@ -49,7 +59,7 @@ function Profile() {
       </div>
 
       
-      <div className='border-2 border-black w-[90%] mt-4 p-2 rounded'>
+      <div className='border-2 border-black w-[90%] mt-4 p-2 rounded about-dev'>
         <b className='text-2xl sm:text-3xl md:text-4xl'>Interests</b>
         {interests.map((ints,l) => <li key={l}>{ints}</li>)}
       </div>
