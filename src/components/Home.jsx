@@ -7,14 +7,19 @@ function Home() {
     gsap.from('.home-image',{
       x:-1000,
       duration:1,
+      opacity:0,
     })
     gsap.from('.home-info',{
       x:500,
       duration:1,
+      opacity:0,
+
     })
     gsap.from('.home-intro',{
       y:500,
       duration:1,
+      opacity:0,
+
     })
   }
   ,[])

@@ -10,9 +10,10 @@ function Profile() {
 
   useGSAP(() => {
     gsap.from('.about-dev',{
-      y:1000,
+      y:500,
       stagger:0.4,
       duration:2,
+      opacity:0,
     })
   },[])
 

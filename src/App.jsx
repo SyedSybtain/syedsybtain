@@ -11,7 +11,7 @@ import ToDoApp from "./components/ToDoApp"
 
 function App() {
   return (
-    <div className="min-w-screen min-h-screen bg-[#E5E5E5] font-mono text-white p-0 m-0 flex flex-col text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
+    <div className="min-w-screen min-h-screen bg-[#E5E5E5] font-mono text-white p-0 m-0 flex flex-col text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl overflow-hidden">
       <Navbar />
         <Routes>
           <Route path='/' element ={<Home /> } />
