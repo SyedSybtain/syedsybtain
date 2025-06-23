@@ -36,6 +36,8 @@ function Home() {
             <b className=''>Python Full Stack Developer</b>
             <b className=''>Front End Developer</b>
             <b className=''>Computer Engineer</b>
+            <b className=''>AI Developer</b>
+
           </div>
         </div>
         

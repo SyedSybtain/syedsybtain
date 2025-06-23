@@ -10,10 +10,10 @@ function Projects() {
       duration:1,
     })
     gsap.from('.project-item',{
-      y:700,
+      x:700,
       opacity:0,
-      duration:1,
-      stagger:0.3
+      duration:0.5,
+      stagger:0.1
     })
   },[])
 

@@ -12,6 +12,7 @@ function Links() {
             <div>Phone : 03458843285 📞  </div>
             <div>LinkedIn : <a href="https://www.linkedin.com/in/syed-sybtain/">My LinkedIn 🖇️ </a> </div>
             <div>GitHub : <a href="https://github.com/SyedSybtain">My Github 🖇️ </a> </div>
+            <div>CV : <a href="https://drive.google.com/drive/folders/1zPUd-yFNVw7njvxileZMBZNGApmC5bqc?usp=drive_link">Download Link 🖇️</a> </div>
             <div>Address : KPK, Pakistan 📌 </div>
           </div>
     </div>

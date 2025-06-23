@@ -4,9 +4,10 @@ function ToDoApp() {
     const [tasks,setTasks] = useState([])
     const [newTask,setNewTask] = useState("")
 
-    function addTask() {
-        const pushTask = newTask
-        setTasks(tasks => [...tasks,pushTask])
+    function addTask(e) {
+        e.preventDefault()
+        if (newTask.trim() === '') return
+        setTasks(tasks => [...tasks,newTask])
         setNewTask("")
     }
 
