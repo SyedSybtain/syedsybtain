@@ -39,7 +39,7 @@ function Links() {
                 <input className='p-1 rounded' type="text" name='name' placeholder='Your Name ...'  />
                 <input className='p-1 rounded' type="email" name='email'  placeholder='Your Mail ...'  />
                 <textarea className='p-1 rounded' type="text" name='message' placeholder='Message ...' />
-                <button className='bg-green w-max p-1 rounded bg-green-600 text-white' type='submit' value='Send'>Send Email</button>
+                <button className='w-max p-1 rounded bg-green-600 text-white' type='submit' value='Send'>Send Email</button>
               </form>
             </div>
     </div>
