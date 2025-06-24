@@ -33,7 +33,7 @@ function Links() {
             <div>Address : KPK, Pakistan 📌 </div>
           </div>
 
-          <div className='bg-black text-white p-2 rounded-xl mt-8 w-[100%] md:w-[50%]  self-center absolute bottom-0'>
+          <div className='bg-black text-black p-2 rounded-xl mt-8 w-[100%] md:w-[50%]  self-center absolute bottom-0'>
               <b>Get In Touch</b>
               <form className='flex flex-col gap-2' ref={form} onSubmit={handleMail}>
                 <input className='p-1 rounded' type="text" name='name' placeholder='Your Name ...'  />
