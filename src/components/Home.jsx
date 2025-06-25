@@ -8,7 +8,7 @@ import { RiAiGenerate2, RiTailwindCssFill } from 'react-icons/ri'
 import { PiOpenAiLogo } from 'react-icons/pi'
 import { GiNuclearPlant, GiTorch } from 'react-icons/gi'
 import { BiLogoDjango } from 'react-icons/bi'
-import { TbBrandDjango } from 'react-icons/tb'
+import { TbBrandDjango, TbBrandVisualStudio } from 'react-icons/tb'
 import { DiJekyllSmall } from 'react-icons/di'
 
 function Home() {
@@ -80,11 +80,7 @@ function Home() {
             <FaGitAlt className='hover:scale-[1.1] text-orange-700 text-4xl md:text-8xl'/>
             <FaGithub className='hover:scale-[1.1] text-black text-4xl md:text-8xl'/>
             <SiPytorch className='hover:scale-[1.1] text-orange-700 text-4xl md:text-8xl'/>
-            <SiOllama className='hover:scale-[1.1] text-orange-700 text-4xl md:text-8xl'/>
-            <FaHtml5 className='hover:scale-[1.1] text-orange-700 text-4xl md:text-8xl'/>
-            <FaHtml5 className='hover:scale-[1.1] text-orange-700 text-4xl md:text-8xl'/>
-            <FaHtml5 className='hover:scale-[1.1] text-orange-700 text-4xl md:text-8xl'/>
-            <FaHtml5 className='hover:scale-[1.1] text-orange-700 text-4xl md:text-8xl'/>
+            <TbBrandVisualStudio className='hover:scale-[1.1] text-sky-500 text-4xl md:text-8xl'/>
 
           </div>
           
