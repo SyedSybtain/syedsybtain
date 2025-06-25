@@ -1,5 +1,7 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import { FaLinkedin, FaLocationDot, FaPhone } from 'react-icons/fa6'
+import { FaEnvelope, FaGithub, FaNewspaper } from 'react-icons/fa'
 
 function Links() {
   const [show,setShow] = useState(false)
@@ -25,16 +27,16 @@ function Links() {
       <b className='text-2xl sm:text-3xl md:text-4xl font-mono slef-center'>Personal Info/Links</b>  
           <button className='text-2xl sm:text-3xl md:text-4xl w-max self-center animate-bounce' onClick={() => setShow(!show)}> {show ? " Hide 🙈" : "Show 👀"} </button>
           <div className={show ? 'flex flex-col self-center text-start w-max' : 'flex flex-col self-center blur-sm text-start w-max'}>
-            <div>Email : <a href="mailto:sybtainsyed@gmail.com">sybtainsyed@gmail.com 📩</a> </div>
-            <div>Phone : 03458843285 📞  </div>
-            <div>LinkedIn : <a href="https://www.linkedin.com/in/syed-sybtain/">My LinkedIn 🖇️ </a> </div>
-            <div>GitHub : <a href="https://github.com/SyedSybtain">My Github 🖇️ </a> </div>
-            <div>CV : <a href="https://drive.google.com/drive/folders/1zPUd-yFNVw7njvxileZMBZNGApmC5bqc?usp=drive_link">Download Link 🖇️</a> </div>
-            <div>Address : KPK, Pakistan 📌 </div>
+            <div className='flex justify-between'><a href="mailto:sybtainsyed@gmail.com">sybtainsyed@gmail.com </a><FaEnvelope className='text-blue-600 ml-3'/> </div>
+            <div className='flex justify-between'>03458843285  <FaPhone className='text-red-700 ml-3'/></div>
+            <div className='flex justify-between'><a href="https://www.linkedin.com/in/syed-sybtain/">My LinkedIn </a> <FaLinkedin className='text-blue-700 ml-3'/> </div>
+            <div className='flex justify-between'><a href="https://github.com/SyedSybtain">My Github  </a> <FaGithub className='ml-3'/></div>
+            <div className='flex justify-between'><a href="https://drive.google.com/drive/folders/1zPUd-yFNVw7njvxileZMBZNGApmC5bqc?usp=drive_link">Download CV</a> <FaNewspaper className='text-yellow-900 ml-3'/></div>
+            <div className='flex justify-between'>KPK, Pakistan <FaLocationDot className='text-red-600 ml-3'/> </div>
           </div>
 
           <div className='bg-black text-black p-2 rounded-xl mt-8 w-[100%] md:w-[50%]  self-center absolute bottom-0'>
-              <b>Get In Touch</b>
+              <b className='text-white'>Get In Touch</b>
               <form className='flex flex-col gap-2' ref={form} onSubmit={handleMail}>
                 <input className='p-1 rounded' type="text" name='name' placeholder='Your Name ...'  />
                 <input className='p-1 rounded' type="email" name='email'  placeholder='Your Mail ...'  />

@@ -5,7 +5,7 @@ import gsap from 'gsap'
 function Profile() {
   const languages = ["Python" ,"JavaScript", "Matlab", "PostgreSQL", "C/C++", "Assembly", "Verilog", "VHDL"]
   const frameWorks = ["DJANGO","ReactJS","Pytorch", "TensorFlow", "Numpy", "Pandas", "Scikit-Learn", "Matplotlib", "OpenCV"]
-  const techStack = ["Git/Github", "Docker", "AWS", "MySQL", "DJANGO", "DRF", "Raspberry Pi", "Integrating APIs"]
+  const techStack = ["Git/Github", "Docker", "AWS", "MySQL", "DJANGO", "DRF", "Raspberry Pi", "Vercel"]
   const interests = ["AI", "ML", "GenAI", "NLP", "Computer Vision", "IoT", "LLM’s", "Fine Tuning AI Models", "Integrating AI with WEB"]
 
   useGSAP(() => {
@@ -44,7 +44,7 @@ function Profile() {
       <div className="border-b-2 border-black w-[90%] mt-4 about-dev">
         <b className='text-2xl sm:text-3xl md:text-4xl'>Skills</b>
         <div className='grid grid-cols-2 justify-center'>
-          <div className=' w-max border-2 border-black mt-2 p-2 rounded'>
+          <div className='w-max border-2 border-black mt-2 p-2 rounded'>
             <b className=''>Languages</b>
             {languages.map((lang,i) => <li key = {i}>{lang}</li>  )}
           </div>
