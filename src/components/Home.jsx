@@ -3,12 +3,12 @@ import React, { useState } from 'react'
 import gsap from 'gsap'
 import { FaPython,FaJs,FaHtml5, FaGithub } from 'react-icons/fa'
 import { Fa0, Fa1, FaDocker, FaGit, FaGitAlt } from 'react-icons/fa6'
-import { Si2Fas, SiDjango, SiJson, SiJsonwebtokens, SiLangchain, SiOllama, SiPostgresql, SiPytorch, SiReact, SiRust } from 'react-icons/si'
+import { Si2Fas, SiAutocad, SiAutodesk, SiAutodeskmaya, SiAutodeskrevit, SiDjango, SiGreensock, SiJson, SiJsonwebtokens, SiLangchain, SiOllama, SiPostgresql, SiPytorch, SiReact, SiRust, SiThreedotjs } from 'react-icons/si'
 import { RiAiGenerate2, RiTailwindCssFill } from 'react-icons/ri'
 import { PiOpenAiLogo } from 'react-icons/pi'
 import { GiNuclearPlant, GiTorch } from 'react-icons/gi'
 import { BiLogoDjango } from 'react-icons/bi'
-import { TbBrandDjango, TbBrandVisualStudio } from 'react-icons/tb'
+import { TbBrandDjango, TbBrandVisualStudio, TbHandThreeFingers } from 'react-icons/tb'
 import { DiJekyllSmall } from 'react-icons/di'
 
 function Home() {
@@ -65,14 +65,16 @@ function Home() {
           </p>
         </div>
         <div className=' mt-2 p-2 w-[70%] home-intro'>
-          <div className='grid grid-cols-3 md:grid-cols-5 mt-2'>
+          <div className='grid grid-cols-3 md:grid-cols-5 mt-2 gap-2'>
             <FaPython className='hover:scale-[1.1] text-blue-700 text-4xl md:text-8xl'/>
             <FaJs className='hover:scale-[1.1] text-yellow-600 text-4xl md:text-8xl'/>
-            <SiDjango className='hover:scale-[1.1] text-blue-700 text-4xl md:text-8xl'/>
+            <SiDjango className='hover:scale-[1.1] text-green-900 text-4xl md:text-8xl'/>
             <SiReact id='spinDiv' className='hover:scale-[1.1] text-blue-500 text-4xl md:text-8xl'/>
             <SiLangchain className='hover:scale-[1.1] text-green-700 text-4xl md:text-8xl'/>
             <PiOpenAiLogo className='hover:scale-[1.1] text-black text-4xl md:text-8xl'/>
+            <SiThreedotjs className='hover:scale-[1.1] text-black text-4xl md:text-8xl'/>
             <RiTailwindCssFill className='hover:scale-[1.1] text-blue-700 text-4xl md:text-8xl'/>
+            <SiGreensock className='hover:scale-[1.1] text-green-700 text-4xl md:text-8xl'/>
             <FaHtml5 className='hover:scale-[1.1] text-orange-700 text-4xl md:text-8xl'/>
             <SiPostgresql className='hover:scale-[1.1] text-sky-700 text-4xl md:text-8xl'/>
             <FaDocker className='hover:scale-[1.1] text-blue-600 text-4xl md:text-8xl'/>
@@ -81,7 +83,7 @@ function Home() {
             <FaGithub className='hover:scale-[1.1] text-black text-4xl md:text-8xl'/>
             <SiPytorch className='hover:scale-[1.1] text-orange-700 text-4xl md:text-8xl'/>
             <TbBrandVisualStudio className='hover:scale-[1.1] text-sky-500 text-4xl md:text-8xl'/>
-
+            <SiAutocad className='hover:scale-[1.1] text-red-700 text-4xl md:text-8xl'/>
           </div>
           
         </div>
