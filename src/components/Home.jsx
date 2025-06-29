@@ -53,6 +53,7 @@ function Home() {
             <b className=''>Python Full Stack Developer</b>
             <b className=''>Front End Developer</b>
             <b className=''>AI Developer</b>
+            <a className='bg-black rounded p-1 text-white' href="SyedSybtain-CV.pdf" download>Donwload CV</a>
 
           </div>
         </div>
@@ -63,6 +64,11 @@ function Home() {
             I am Computer Engineer Graduated from Comsats University Islamabad. I have passion in AI, NLP, GenAI, Computer Vision and Python Development.
             This Passion leads me to do projects in these domains to learn advanced techniques and contribute in projects for the benefits of Society.
           </p>
+          
+        </div>
+        <div className='mt-2 p-2 w-[70%] home-intro'>
+            Apart, I am an Enthusistic Frontend Developer having good knowledge of Libararies and toolkits to enhance the user interctivity. I want
+            to enhance my Skills by contributing in projects.
         </div>
         <div className=' mt-2 p-2 w-[70%] home-intro'>
           <div className='grid grid-cols-3 md:grid-cols-5 mt-2 gap-2'>
