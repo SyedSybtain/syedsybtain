@@ -1,15 +1,12 @@
 import { useGSAP } from '@gsap/react'
-import React, { useState } from 'react'
 import gsap from 'gsap'
 import { FaPython,FaJs,FaHtml5, FaGithub } from 'react-icons/fa'
-import { Fa0, Fa1, FaDocker, FaGit, FaGitAlt } from 'react-icons/fa6'
-import { Si2Fas, SiAutocad, SiAutodesk, SiAutodeskmaya, SiAutodeskrevit, SiDjango, SiGreensock, SiJson, SiJsonwebtokens, SiLangchain, SiOllama, SiPostgresql, SiPytorch, SiReact, SiRust, SiThreedotjs } from 'react-icons/si'
+import { FaDocker, FaGitAlt } from 'react-icons/fa6'
+import { SiAutocad, SiDjango, SiGreensock, SiLangchain, SiPostgresql, SiPytorch, SiReact, SiThreedotjs } from 'react-icons/si'
 import { RiAiGenerate2, RiTailwindCssFill } from 'react-icons/ri'
 import { PiOpenAiLogo } from 'react-icons/pi'
-import { GiNuclearPlant, GiTorch } from 'react-icons/gi'
-import { BiLogoDjango } from 'react-icons/bi'
-import { TbBrandDjango, TbBrandVisualStudio, TbHandThreeFingers } from 'react-icons/tb'
-import { DiJekyllSmall } from 'react-icons/di'
+import { TbBrandVisualStudio } from 'react-icons/tb'
+
 
 function Home() {
   useGSAP(() => {
