@@ -53,8 +53,10 @@ function Home() {
             <b className=''>Python Full Stack Developer</b>
             <b className=''>Front End Developer</b>
             <b className=''>AI Developer</b>
-            <a className='bg-black rounded p-1 text-white' href="SyedSybtain-CV.pdf" download>Donwload CV</a>
-
+            <a className='bg-black rounded p-1 text-white' href="SyedSybtain-CV.pdf" download>
+              Download CV
+            </a>
+            
           </div>
         </div>
         
