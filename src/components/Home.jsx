@@ -32,8 +32,7 @@ function Home() {
       repeat: -1,
       duration: 5,
       ease: "linear",
-    });
-
+    })
   }
   ,[])
   return (
@@ -66,8 +65,8 @@ function Home() {
           
         </div>
         <div className='mt-2 p-2 w-[70%] home-intro'>
-            Apart, I am an Enthusistic Frontend Developer having good knowledge of Libararies and toolkits to enhance the user interctivity. I want
-            to enhance my Skills by contributing in projects.
+            Apart, I am an Passionate Frontend Developer having good knowledge of Libararies and toolkits for building web apps.I enjoy turning design
+             ideas into interactive web experiences. I learn new tools and best practices to build fast, accessible, and scalable applications.
         </div>
         <div className=' mt-2 p-2 w-[70%] home-intro'>
           <div className='grid grid-cols-3 md:grid-cols-5 mt-2 gap-2'>
