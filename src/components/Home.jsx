@@ -1,11 +1,6 @@
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
-import { FaPython,FaJs,FaHtml5, FaGithub } from 'react-icons/fa'
-import { FaDocker, FaGitAlt } from 'react-icons/fa6'
-import { SiAutocad, SiDjango, SiGreensock, SiLangchain, SiPostgresql, SiPytorch, SiReact, SiThreedotjs } from 'react-icons/si'
-import { RiAiGenerate2, RiTailwindCssFill } from 'react-icons/ri'
-import { PiOpenAiLogo } from 'react-icons/pi'
-import { TbBrandVisualStudio } from 'react-icons/tb'
+
 
 
 function Home() {
@@ -25,13 +20,6 @@ function Home() {
       y:500,
       duration:1,
       opacity:0,
-
-    })
-    gsap.to("#spinDiv", {
-      rotation: 360,
-      repeat: -1,
-      duration: 5,
-      ease: "linear",
     })
   }
   ,[])
@@ -68,29 +56,7 @@ function Home() {
             Apart, I am an Passionate Frontend Developer having good knowledge of Libararies and toolkits for building web apps.I enjoy turning design
              ideas into interactive web experiences. I learn new tools and best practices to build fast, accessible, and scalable applications.
         </div>
-        <div className=' mt-2 p-2 w-[70%] home-intro'>
-          <div className='grid grid-cols-3 md:grid-cols-5 mt-2 gap-2'>
-            <FaPython className='hover:scale-[1.1] text-blue-700 text-4xl md:text-8xl'/>
-            <FaJs className='hover:scale-[1.1] text-yellow-600 text-4xl md:text-8xl'/>
-            <SiDjango className='hover:scale-[1.1] text-green-900 text-4xl md:text-8xl'/>
-            <SiReact id='spinDiv' className='hover:scale-[1.1] text-blue-500 text-4xl md:text-8xl'/>
-            <SiLangchain className='hover:scale-[1.1] text-green-700 text-4xl md:text-8xl'/>
-            <PiOpenAiLogo className='hover:scale-[1.1] text-black text-4xl md:text-8xl'/>
-            <SiThreedotjs className='hover:scale-[1.1] text-black text-4xl md:text-8xl'/>
-            <RiTailwindCssFill className='hover:scale-[1.1] text-blue-700 text-4xl md:text-8xl'/>
-            <SiGreensock className='hover:scale-[1.1] text-green-700 text-4xl md:text-8xl'/>
-            <FaHtml5 className='hover:scale-[1.1] text-orange-700 text-4xl md:text-8xl'/>
-            <SiPostgresql className='hover:scale-[1.1] text-sky-700 text-4xl md:text-8xl'/>
-            <FaDocker className='hover:scale-[1.1] text-blue-600 text-4xl md:text-8xl'/>
-            <RiAiGenerate2 className='hover:scale-[1.1] text-black text-4xl md:text-8xl'/>
-            <FaGitAlt className='hover:scale-[1.1] text-orange-700 text-4xl md:text-8xl'/>
-            <FaGithub className='hover:scale-[1.1] text-black text-4xl md:text-8xl'/>
-            <SiPytorch className='hover:scale-[1.1] text-orange-700 text-4xl md:text-8xl'/>
-            <TbBrandVisualStudio className='hover:scale-[1.1] text-sky-500 text-4xl md:text-8xl'/>
-            <SiAutocad className='hover:scale-[1.1] text-red-700 text-4xl md:text-8xl'/>
-          </div>
-          
-        </div>
+        
     </div>
   )
 }
