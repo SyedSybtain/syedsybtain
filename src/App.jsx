@@ -8,6 +8,7 @@ import WhiteBoard from "./components/WhiteBoard"
 import DigitalClock from "./components/DigitalClock"
 import Stopwatch from "./components/Stopwatch"
 import ToDoApp from "./components/ToDoApp"
+import Solar from "./components/Solar"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path='/' element ={<Home /> } />
           <Route path='/profile' element ={<Profile /> } />
+          <Route path='/solar3d' element ={ <Solar /> }/>
           <Route path='/projects' element ={<Projects /> } />
           <Route path='/links' element ={<Links /> } />
           <Route path='/projects/whiteboard' element ={<WhiteBoard /> } />
