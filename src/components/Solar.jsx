@@ -19,191 +19,29 @@ function Sun(){
     </mesh>
 }
 
-  function Mercury(){
-    const texture = useTexture('mercury.jpg')
+function Planet({img,speed,x,size,h,name}){
+    const texture = useTexture(img)
     const ref = useRef()
     let currentPos = 0
     useFrame((_,delta) => {
       currentPos += delta
-      ref.current.position.x = Math.cos(currentPos*0.5)*3 
-      ref.current.position.z = Math.sin(currentPos*0.5)*3
+      ref.current.position.x = Math.cos(currentPos*speed)*x 
+      ref.current.position.z = Math.sin(currentPos*speed)*x
     })
     return (
     <Trail width={3} length={100} attenuation={(val) => val}>
-      <mesh ref={ref} position={[3,0,0]}>
-        <sphereGeometry args={[0.2,32]} />
+      <mesh ref={ref} position={[x,0,0]}>
+        <sphereGeometry args={[size,32]} />
         <meshStandardMaterial map={texture} />
         <Text
-          position={[0,1.2,0]}
+          position={[0,h,0]}
           scale={0.5}
           >
-            Mercury
+            {name}
           </Text>
       </mesh>
     </Trail>)
-  }
-  function Venus(){
-    const texture = useTexture('venus.jpg')
-
-    const ref = useRef()
-    let currentPos = 0
-    useFrame((_,delta) => {
-      currentPos += delta
-      ref.current.position.x = Math.cos(currentPos*0.3) *4
-      ref.current.position.z = Math.sin(currentPos*0.3) *4
-    })
-    return (
-    <Trail width={3} length={100} attenuation={(val) => val}>
-    <mesh ref={ref} position={[4,0,0]}>
-      <sphereGeometry args={[0.3,32]} />
-      <meshStandardMaterial map={texture}  />
-      <Text
-          position={[0,1.2,0]}
-          scale={0.5}
-          >
-            Venus
-          </Text>
-    </mesh></Trail>)
-  }
-  function Earth(){
-    const texture = useTexture('earth.jpg')
-
-    const ref = useRef()
-    let currentPos = 0
-    useFrame((_,delta) => {
-      currentPos += delta
-      ref.current.position.x = Math.cos(currentPos*0.27) *5
-      ref.current.position.z = Math.sin(currentPos*0.27) *5
-    })
-    return (
-    <Trail width={3} length={100} attenuation={(val) => val}>
-    <mesh ref={ref} position={[5,0,0]}>
-      <sphereGeometry args={[0.5,32]} />
-      <meshStandardMaterial map={texture}  />
-      <Text
-          position={[0,1.2,0]}
-          scale={0.5}
-          >
-            Earth
-          </Text>
-    </mesh></Trail>)
-  }
-  function Mars(){
-    const texture = useTexture('mars.jpg')
-
-    const ref = useRef()
-    let currentPos = 0
-    useFrame((_,delta) => {
-      currentPos += delta
-      ref.current.position.x = Math.cos(currentPos*0.13) *6
-      ref.current.position.z = Math.sin(currentPos*0.13) *6
-    })
-    return (
-    <Trail width={3} length={100} attenuation={(val) => val}>
-    <mesh ref={ref} position={[6,0,0]}>
-      <sphereGeometry args={[0.4,32]} />
-      <meshStandardMaterial map={texture}  />
-      <Text
-          position={[0,1.2,0]}
-          scale={0.5}
-          >
-            Mars
-          </Text>
-    </mesh></Trail>)
-  }
-  function Jupyter(){
-    const texture = useTexture('jupyter.jpg')
-
-    const ref = useRef()
-    let currentPos = 0
-    useFrame((_,delta) => {
-      currentPos += delta
-      ref.current.position.x = Math.cos(currentPos*0.47) *8
-      ref.current.position.z = Math.sin(currentPos*0.47) *8
-    })
-    return (
-    <Trail width={3} length={100} attenuation={(val) => val}>
-    <mesh ref={ref} position={[8,0,0]}>
-      <sphereGeometry args={[1,32]} />
-      <meshStandardMaterial map={texture}  />
-      <Text
-          position={[0,1.4,0]}
-          scale={0.5}
-          >
-            Jupyter
-          </Text>
-    </mesh></Trail>)
-  }
-  function Saturn(){
-    const texture = useTexture('saturn.jpg')
-
-    const ref = useRef()
-    let currentPos = 0
-    useFrame((_, delta) => {
-      currentPos += delta
-      ref.current.position.x = Math.cos(currentPos*0.35) *11
-      ref.current.position.z = Math.sin(currentPos*0.35) *11
-    })
-    return (
-    <Trail width={3} length={100} attenuation={(val) => val}>
-    <mesh ref={ref} position={[11,0,0]}>
-      <sphereGeometry args={[1.2,32]} />
-      <meshStandardMaterial map={texture}  />
-      <Text
-          position={[0,1.8,0]}
-          scale={0.5}
-          >
-            Saturn
-          </Text>
-    </mesh></Trail>)
-  }
-  function Uranus(){
-    const texture = useTexture('uranus.jpg')
-
-    const ref = useRef()
-    let currentPos = 0
-    useFrame((_,delta) => {
-      currentPos += delta
-      ref.current.position.x = Math.cos(currentPos*0.3)*13
-      ref.current.position.z = Math.sin(currentPos*0.3)*13
-    })
-    return (
-    <Trail width={3} length={100} attenuation={(val) => val}>
-      <mesh ref={ref} position={[13,0,0]}>
-        <sphereGeometry args={[0.5,32]} />
-        <meshStandardMaterial map={texture}  />
-        <Text
-          position={[0,1.2,0]}
-          scale={0.5}
-          >
-            Uranus
-          </Text>
-      </mesh>
-    </Trail>)
-  }
-  function Neptune(){
-    const texture = useTexture('neptune.jpg')
-
-    const ref = useRef()
-    let currentPos = 0
-    useFrame((_,delta) => {
-      currentPos += delta
-      ref.current.position.x = Math.cos(currentPos*0.2) *15
-      ref.current.position.z = Math.sin(currentPos*0.2) *15
-    })
-    return (
-    <Trail width={3} length={100} attenuation={(val) => val}>
-    <mesh ref={ref} position={[15,0,0]}>
-      <sphereGeometry args={[0.5,32]} />
-      <meshStandardMaterial map={texture}  />
-      <Text
-          position={[0,1.2,0]}
-          scale={0.5}
-          >
-            Neptune
-          </Text>
-    </mesh></Trail>)
-  }
+}
 
 function Solar() {
 
@@ -211,20 +49,20 @@ function Solar() {
     <div className='bg-black w-screen h-screen'>
         <Canvas camera={{ position:[0,20,40], fov:50 }} >
           <Suspense fallback={null}>
-          <group>
-          <OrbitControls minDistance={5} maxDistance={40} enableRotate={true} enableZoom={true} enablePan={true} />
-          {/* // mouseButtons={{ LEFT: 2, RIGHT:0 }} touches={{ ONE : THREE.TOUCH.PAN , TWO : THREE.TOUCH.DOLLY_PAN }} /> */}
-          <ambientLight intensity={1} />
-          <Sun />
-          <Mercury />
-          <Venus />
-          <Earth />
-          <Mars />
-          <Jupyter />
-          <Saturn />
-          <Uranus />
-          <Neptune />
-          </group>
+            <group>
+            <OrbitControls minDistance={5} maxDistance={40} enableRotate={true} enableZoom={true} enablePan={true} />
+            {/* // mouseButtons={{ LEFT: 2, RIGHT:0 }} touches={{ ONE : THREE.TOUCH.PAN , TWO : THREE.TOUCH.DOLLY_PAN }} /> */}
+              <ambientLight intensity={1} />
+              <Sun />
+              <Planet img='mercury.jpg' speed={0.25} x={3} size={0.25} h={0.5} name="Mercury" />
+              <Planet img='venus.jpg' speed={0.3} x={4} size={0.3} h={0.6} name="Venus" />
+              <Planet img='earth.jpg' speed={0.20} x={5.5} size={0.4} h={0.7} name="Earth" />
+              <Planet img='mars.jpg' speed={0.35} x={7} size={0.35} h={0.7} name="Mars" />
+              <Planet img='jupyter.jpg' speed={0.41} x={9} size={1.2} h={1.7} name="Jupyter" />
+              <Planet img='saturn.jpg' speed={0.30} x={12} size={1.4} h={1.8} name="Saturn" />
+              <Planet img='uranus.jpg' speed={0.25} x={14} size={0.6} h={0.9} name="Uranus" />
+              <Planet img='neptune.jpg' speed={0.35} x={16} size={0.5} h={0.8} name="Neptune" />
+            </group>
           </Suspense>
          </Canvas> /
     </div>
