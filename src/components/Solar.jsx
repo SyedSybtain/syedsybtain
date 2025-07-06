@@ -3,6 +3,7 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { OrbitControls, Text, useTexture } from '@react-three/drei'
 import * as THREE from "three" 
 import { Trail } from '@react-three/drei'
+import Loader from './Loader'
 
 function Sun(){
     const texture = useTexture('sun.jpg')
@@ -48,7 +49,7 @@ function Solar() {
   return (
     <div className='bg-black w-screen h-screen'>
         <Canvas camera={{ position:[0,20,40], fov:50 }} >
-          <Suspense fallback={null}>
+          <Suspense fallback={ <Loader /> }>
             <group>
             <OrbitControls minDistance={5} maxDistance={40} enableRotate={true} enableZoom={true} enablePan={true} />
             {/* // mouseButtons={{ LEFT: 2, RIGHT:0 }} touches={{ ONE : THREE.TOUCH.PAN , TWO : THREE.TOUCH.DOLLY_PAN }} /> */}
