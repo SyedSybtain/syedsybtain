@@ -44,7 +44,7 @@ function Planet({img,speed,x,size,h,name}){
 }
 
 function Solar() {
-
+  
   return (
     <div className='bg-black w-screen h-screen'>
         <Canvas camera={{ position:[0,20,40], fov:50 }} >
