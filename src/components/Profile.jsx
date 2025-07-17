@@ -3,7 +3,7 @@ import React from 'react'
 import gsap from 'gsap'
 import { FaPython,FaJs,FaHtml5, FaGithub } from 'react-icons/fa'
 import { FaDocker, FaGitAlt } from 'react-icons/fa6'
-import { SiAutocad, SiDjango, SiGreensock, SiLangchain, SiPostgresql, SiPytorch, SiReact, SiThreedotjs } from 'react-icons/si'
+import { SiAutocad, SiDjango, SiGreensock, SiLangchain, SiNextdotjs, SiPostgresql, SiPytorch, SiReact, SiThreedotjs } from 'react-icons/si'
 import { RiAiGenerate2, RiTailwindCssFill } from 'react-icons/ri'
 import { PiOpenAiLogo } from 'react-icons/pi'
 import { TbBrandVisualStudio } from 'react-icons/tb'
@@ -76,6 +76,7 @@ function Profile() {
             <FaJs className='hover:scale-[1.1] text-yellow-600 text-4xl md:text-8xl'/>
             <SiDjango className='hover:scale-[1.1] text-green-900 text-4xl md:text-8xl'/>
             <SiReact id='spinDiv' className='hover:scale-[1.1] text-blue-500 text-4xl md:text-8xl'/>
+            <SiNextdotjs className='hover:scale-[1.1] text-black text-4xl md:text-8xl'/>
             <SiLangchain className='hover:scale-[1.1] text-green-700 text-4xl md:text-8xl'/>
             <PiOpenAiLogo className='hover:scale-[1.1] text-black text-4xl md:text-8xl'/>
             <SiThreedotjs className='hover:scale-[1.1] text-black text-4xl md:text-8xl'/>
