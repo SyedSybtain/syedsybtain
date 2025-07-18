@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
-    <div className='flex justify-between py-2 bg-black items-center w-screen'>
-        <div className='bg-neutral-900 p-1 rounded-full border-2 min-w-[50px] max-w-[50px]'>
+    <div className='flex justify-between py-2 bg-black items-center w-screen md:px-4'>
+        <div className='bg-neutral-900 p-1 rounded-full border-2 w-[40px] md:w-[50px]'>
           <Link to='/'>
             <img className='rounded-full' src="https://avatars.githubusercontent.com/u/115772979?s=400&u=048db871df62327ae9ef3564d8e749d391219788&v=4" alt="Syed Sybtain" />
           </Link>
