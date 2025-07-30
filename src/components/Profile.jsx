@@ -16,7 +16,7 @@ function Profile() {
 
   useGSAP(() => {
     gsap.from('.about-dev',{
-      y:500,
+      x:1500,
       stagger:0.4,
       duration:2,
       opacity:0,
