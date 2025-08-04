@@ -8,7 +8,7 @@ import WhiteBoard from "./components/WhiteBoard"
 import DigitalClock from "./components/DigitalClock"
 import Stopwatch from "./components/Stopwatch"
 import ToDoApp from "./components/ToDoApp"
-import Solar from "./components/Solar"
+// import Solar from "./components/Solar"
 
 function App() {
   return (
