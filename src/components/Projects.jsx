@@ -7,12 +7,12 @@ function Projects() {
   useGSAP(() => {
     gsap.from('#project-head',{
       x:-1500,
-      duration:1,
+      duration:0.6,
     })
     gsap.from('.project-item',{
       x:700,
       opacity:0,
-      duration:0.5,
+      duration:1,
       stagger:0.1
     })
     gsap.to('#reactLogo',{
