@@ -16,8 +16,8 @@ function Profile() {
 
   useGSAP(() => {
     gsap.to('.about-dev',{
-      // stagger:0.1,
-      duration:10,
+      stagger:0.3,
+      duration:1,
       opacity:1,
     })
     gsap.to("#spinDiv", {
