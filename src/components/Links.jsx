@@ -26,7 +26,7 @@ function Links() {
     <div className='w-[90%] text-black self-center mt-4 p-1 flex flex-col text-center'>
       <b className='text-2xl sm:text-3xl md:text-4xl font-mono slef-center'>Personal Info/Links</b>  
           <button className='text-2xl sm:text-3xl md:text-4xl w-max self-center animate-bounce' onClick={() => setShow(!show)}> {show ? " Hide 🙈" : "Show 👀"} </button>
-          <div className={show ? 'flex flex-col self-center text-start w-max' : 'flex flex-col self-center blur-sm text-start w-max'}>
+          <div className={show ? 'flex flex-col flex-grow self-center text-start w-max' : 'flex flex-col flex-grow self-center blur-sm text-start w-max'}>
             <div className='flex justify-between'><a href="mailto:sybtainsyed@gmail.com">sybtainsyed@gmail.com </a><FaEnvelope className='text-blue-600 ml-3'/> </div>
             <div className='flex justify-between'>03458843285  <FaPhone className='text-red-700 ml-3'/></div>
             <div className='flex justify-between'><a href="https://www.linkedin.com/in/syed-sybtain/">My LinkedIn </a> <FaLinkedin className='text-blue-700 ml-3'/> </div>
@@ -35,7 +35,7 @@ function Links() {
             <div className='flex justify-between'>KPK, Pakistan <FaLocationDot className='text-red-600 ml-3'/> </div>
           </div>
 
-          <div className='bg-black text-black p-2 rounded-xl mt-8 w-[100%] md:w-[50%]  self-center absolute bottom-0'>
+          <div className='bg-black text-black p-2 md:rounded-xl mt-8 w-[100%] md:w-[50%]  self-center absolute bottom-0'>
               <b className='text-white'>Get In Touch</b>
               <form className='flex flex-col gap-2' ref={form} onSubmit={handleMail}>
                 <input className='p-1 rounded' type="text" name='name' placeholder='Your Name ...'  />
