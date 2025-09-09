@@ -23,7 +23,7 @@ function Links() {
   }
 
   return (
-    <div className='w-[90%] text-black self-center mt-4 p-1 flex flex-col text-center'>
+    <div className='w-[90%] text-black self-center mt-4 p-1 flex flex-col overflow-hidden text-center'>
       <b className='text-2xl sm:text-3xl md:text-4xl font-mono slef-center'>Personal Info/Links</b>  
           <button className='text-2xl sm:text-3xl md:text-4xl w-max self-center animate-bounce' onClick={() => setShow(!show)}> {show ? " Hide 🙈" : "Show 👀"} </button>
           <div className={show ? 'flex flex-col flex-grow self-center text-start w-max' : 'flex flex-col flex-grow self-center blur-sm text-start w-max'}>
